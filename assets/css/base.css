@@ -19,8 +19,20 @@ html {
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
-
+/* Test */
+.grid__column-2{
+    padding-left:12px;
+    padding-right:12px;
+    width:16.6667%;
+}
+.grid__column-10{
+    padding-left:12px;
+    padding-right:12px;
+    width:83.3333%;
+}
 /* Modal */
 .modal{
     position:fixed;
@@ -63,4 +75,18 @@ html {
 .btn.btn--primary{
     color:white;
     background-color: rgba(240,98,70);
+}
+
+/* Seclection */
+.select-input{
+    height: 36px;
+    background-color: white;
+    padding:0 12px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
 }
