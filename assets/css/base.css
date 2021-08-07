@@ -96,3 +96,36 @@ html {
     cursor: pointer;
     z-index: 1;
 }
+
+/* Pagination */
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.pagination-item{
+    margin:0 16px;
+}
+.pagination-item__link{
+    text-decoration: none;
+    font-size: 2rem;
+    color:#939393;
+    min-width:40px;
+    height:30px;
+    font-weight:300;
+}
+.pagination-item__active .pagination-item__link{
+    display: block;
+    background-color:rgba(240,98,70);
+    color: white;
+    text-align: center;
+    line-height:30px;
+    border-radius: 2px;
+}
+.pagination-item__active .pagination-item__link:hover{
+    background-color:rgb(231, 125, 104);
+}
+/* .pagination-item__link-icon{
+
+} */

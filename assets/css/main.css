@@ -931,3 +931,76 @@ i.home-product-item__action-like-icon-fill{
     border-style: solid;
     border-color: rgb(255, 216, 64,0.94) rgb(255, 216, 64,0.94) transparent rgb(255, 216, 64,0.94);
 }
+
+.home-product__pagination{
+    margin: 50px 0 30px 0;
+}
+
+/* Footer */
+.footer{
+    border-top: 4px solid rgba(240,98,70);
+    padding-top: 16px;
+    background-color:white
+}
+.footer__heading{
+    font-size: 1.3rem;
+    color: #666666;
+    font-weight:500;
+}
+.footer-list{
+    list-style: none;
+    padding-left:0;
+}
+/* .footer-iteam{
+
+} */
+.footer-iteam__link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:#999999;
+    display: flex;
+    align-items: center;
+    padding: 9px 0;
+}
+.footer-iteam__link:hover{
+    color: rgba(240,98,70);
+}
+.footer-iteam__icon{
+    font-size:1.8rem;
+    margin-top: -1px;
+    margin-right: 8px;
+    color: #4a4a4a;
+}
+.footer__download{
+    display: flex;
+}
+.footer__download-apps{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.footer__download-qr{
+    width:80px;
+    height: 80px;
+    object-fit: contain;/*fix méo ảnh đối với img*/
+    margin-right: 10px;
+}
+.footer__download-apps-icon{
+    height:20px;
+    margin: 5px 0;
+}
+.footer__download-apps-link{
+    text-decoration: none;
+    color: transparent;
+}
+.footer-license{
+    background-color: #f5f5f5;
+    padding: 16px 0;
+    text-align: center;
+    margin-top: 36px;
+}
+.footer__policy{
+    font-size: 1.3rem;
+    color:#828282;
+    margin:0;
+}
