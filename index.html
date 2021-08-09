@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <title>BanDC Shopee</title>
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="navbar">
+            <div class="grid wide">
+                <nav class="navbar hide-on-mobile-tablet">
                     <ul class="navbar__list">
                         <li class="navbar__list-item navbar__list-item--line navbar__list-item--qr">
                             <span class="navbar__list-item--download">Vào của hàng trên ứng dụng</span>
                             <!-- QR code -->
                             <div class="header__qr">
-                                <img src="assets/img/QR-code.png" alt="QR Code" class="header__qr-img">
+                                <img src="./assets/img/QR-code.png" alt="QR Code" class="header__qr-img">
                                 <div class="header__qr-apps">
                                     <a href="https://shopee.vn/" class="header__qr--link">
-                                        <img src="assets/img/apple-store.png" alt="Apple Store" class="header__qr-download">
+                                        <img src="./assets/img/apple-store.png" alt="Apple Store" class="header__qr-download">
                                     </a>
                                     <a href="" class="header__qr--link">
-                                        <img src="assets/img/google-play.png" alt="Google Play" class="header__qr-download">
+                                        <img src="./assets/img/google-play.png" alt="Google Play" class="header__qr-download">
                                     </a>
                                 </div>
                             </div>
@@ -116,7 +118,7 @@
  
                 <div class="header-with-search">
                     <a href="/" class="header__logo-link">
-                        <div class="header__logo">
+                        <div class="header__logo hide-on-tablet">
                             <div class="header__logo-img">
                                 <i class="fas fa-poo"></i>
                             </div>
@@ -273,10 +275,24 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row container__app">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -304,7 +320,7 @@
                         </nav>
                     </div>
                     <div class="grid__column-10">
-                        <div class="home-header">
+                        <div class="home-header hide-on-mobile-tablet">
                             <span class="home-header__label">Sắp xếp theo</span>
                             <button class="home-header__btn btn">Phổ Biến</button>
                             <button class="home-header__btn btn btn--primary">Mới Nhất</button>
@@ -754,7 +770,7 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
@@ -841,7 +857,7 @@
                 </div>
             </div>
             <div class="footer-license">
-                <div class="grid">
+                <div class="grid wide">
                     <p class="footer__policy">© 2021 - Bản quyền thuộc về Công ty Apple</p>
                 </div>
             </div>
