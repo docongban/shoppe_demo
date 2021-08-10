@@ -353,10 +353,23 @@
     justify-content:space-between;
     align-items:center;
 }
+.header__mobile-search{
+
+}
+.header__mobile-search-icon{
+    font-size:2.6rem;
+    color: white;
+}
 .header__logo{
     width:120px;
     display: flex;
     justify-content: center;
+}
+.header__search-checkbox{
+    display: none;
+}
+.header__search-checkbox:checked ~.header__search{
+    display: flex;
 }
 .header__logo-img{
     width:90px;
@@ -413,10 +426,13 @@
     z-index: 2;
 }
 .header__search-history-title{
-    margin: 8px 12px;
+    position: relative;
+    top: 8px;
+    margin: 8px 12px 0 12px;
     color:#ada9a9;
     font-size:1.4rem;
     font-weight:400;
+    
 }
 .header__search-history-list{
     padding-left: 0;

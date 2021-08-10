@@ -47,12 +47,49 @@
     .hide-on-tablet {
         display: none;
     }
-    
 }
 
 /* Mobile*/
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
+    }
+    .header-with-search{
+        justify-content: space-between;
+    }
+    .header__cart,.header__logo-link{
+        width: unset;
+    }
+    .header__cart,.header__mobile-search{
+        padding:0 12px;
+    }
+    .header__logo-img{
+        font-size:5rem;
+    }
+    .header__search{
+        position: fixed;
+        top: 68px;
+        right: 0;
+        left: 0;
+        width:100%;
+        z-index:1;
+        animation: mobileSearchSideIn linear 0.3s;
+        display: none;
+    }
+
+    @keyframes mobileSearchSideIn {
+        from{
+            opacity:0;
+            top:34px;
+        }
+        to{
+            opacity:1;
+            top:68px;
+        }
+    }
+    .header__search-history{
+        width:100%;
+        position: relative;
+        top: 0;
     }
 }
