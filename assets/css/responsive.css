@@ -35,10 +35,22 @@
         height: 100%;
     }
     .container{
-        margin-top:100px;
+        margin-top:115px;
     }
     .header__sort-bar{
         display: flex;
+    }
+}
+
+/* PC */
+@media (min-width: 1024px)  {
+    .hide-on-pc {
+        display: none;
+    }
+    .header__logo-link{
+        padding:0;
+        position: relative;
+        left: 35px;
     }
 }
 
@@ -60,15 +72,19 @@
     .header__cart,.header__logo-link{
         width: unset;
     }
+    .header__mobile-search{
+        -webkit-tap-highlight-color:transparent;
+    }
     .header__cart,.header__mobile-search{
         padding:0 12px;
     }
+    
     .header__logo-img{
         font-size:5rem;
     }
     .header__search{
         position: fixed;
-        top: 68px;
+        top: 73px;
         right: 0;
         left: 0;
         width:100%;
@@ -76,7 +92,16 @@
         animation: mobileSearchSideIn linear 0.3s;
         display: none;
     }
-
+    .pagination {
+        padding-left: 0;
+    }
+    .pagination-item{
+        margin: 0 10px;
+    }
+    .container__app{
+        margin: 0;
+        padding-top: 8px;
+    }
     @keyframes mobileSearchSideIn {
         from{
             opacity:0;
@@ -90,6 +115,24 @@
     .header__search-history{
         width:100%;
         position: relative;
-        top: 0;
+        top: -5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.3)
+    }
+    .footer__content{
+        padding: 10px 16px 0;
+    }
+    .footer__heading{
+        text-align: center;
+    }
+    .footer-iteam__link{
+        justify-content: center;
+    }
+    .footer__download{
+        justify-content: center;
+    }
+    .footer__download-apps-link{
+        display: block;
+        padding:5px;
+        -webkit-tap-highlight-color: transparent;
     }
 }

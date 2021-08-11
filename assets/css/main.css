@@ -1,3 +1,6 @@
+.app{
+    overflow: hidden;
+}
 .header{
     height: 120px;
     background-image: linear-gradient(0,#ff6533,#f53e2d);
@@ -353,9 +356,9 @@
     justify-content:space-between;
     align-items:center;
 }
-.header__mobile-search{
+/* .header__mobile-search{
 
-}
+} */
 .header__mobile-search-icon{
     font-size:2.6rem;
     color: white;
@@ -461,6 +464,7 @@
     width:150px;
     display: flex;
     justify-content:center;
+    -webkit-tap-highlight-color:transparent;
 }
 .header__cart-icon{
     margin-top:5px;
@@ -469,7 +473,7 @@
     cursor: pointer;
     position: relative;
 }
-.header__cart-icon:hover .header__cart-list{
+.header__cart:hover .header__cart-list{
     display:block;
 }
 .header__cart-list{
@@ -675,6 +679,15 @@
 .header__sort-item--active .header__sort-link{
     color: #ff6533;
 }
+/* .header__sort-item--active .header__sort-link::after{
+    content: "";
+    position: absolute;
+    top: 98%;
+    left:0px;
+    width: 100%;
+    border-bottom: 1px solid #ee521e;
+    border-radius: 1px;
+} */
 .header__sort-item:first-child .header__sort-link::before{ 
     display: none;
 }
@@ -728,6 +741,55 @@
 .category-item__link:hover{
     color:#ff6533;
     right: 4px;
+}
+
+/* Mobile category */
+.moblie-category__list{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.moblie-category__list::-webkit-scrollbar{
+    display: none;
+}
+.moblie-category__item{
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.moblie-category__item:last-child{
+    margin-right:0;
+}
+.moblie-category__item:nth-last-of-type(3n+1) .moblie-category__link{
+    background-color: #87AFD8;
+}
+.moblie-category__item:nth-last-of-type(3n+2) .moblie-category__link{
+    background-color: #76C9BD;
+}
+.moblie-category__item:nth-last-of-type(3n+3) .moblie-category__link{
+    background-color: #88CF81;
+}
+.moblie-category__link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    line-height:2rem;
+    display: block;
+    width:110px;
+    height:45px;
+    /* overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color:white;
+    border-radius:4px;
+    font-weight: 300;
+    -webkit-tap-highlight-color:transparent;
+    padding:0 4px;
 }
 
 /* Home sort*/
